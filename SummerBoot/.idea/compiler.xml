@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server-7001" />
+        <module name="eureka-server-7002" />
+        <module name="provider-employee-9001" />
+        <module name="summer-service" />
+        <module name="summer-service-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server-7001" target="1.8" />
+      <module name="eureka-server-7002" target="1.8" />
+      <module name="provider-dept-8001" target="1.8" />
+      <module name="provider-dept-8002" target="1.8" />
+      <module name="provider-employee-9001" target="1.8" />
+      <module name="summer-service" target="1.8" />
+      <module name="summer-service-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+server:
+  port: 8002
+
+mybatis:
+  type-aliases-package: com.com.hackzone.entity
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  application:
+    name: summer-service-dept # 所有服务的集群都要统一应用名 !!!
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://118.24.44.206:3306/springboot
+    username: maxwell
+    password: 520806
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: summer-service-8002 # 服务实例id
+    prefer-ip-address: true # 显示ip地址
+
